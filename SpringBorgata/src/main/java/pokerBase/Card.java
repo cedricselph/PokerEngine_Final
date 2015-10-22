@@ -21,6 +21,7 @@ public final class Card {
 	/**
 	 * Keep the no-arg constructor private.  I don't want 'Card' created without attributes.
 	 */
+	@SuppressWarnings("unused")
 	private Card()
 	{
 	}
@@ -42,6 +43,12 @@ public final class Card {
 		Suit = suit; 
 		Rank = rank; 
 		this.Wild = Wild;
+	}
+	
+	//for junit testing
+	public Card(eSuit suit, eRank rank) {
+		Suit = suit; 
+		Rank = rank; 
 	}
 	
 	/**

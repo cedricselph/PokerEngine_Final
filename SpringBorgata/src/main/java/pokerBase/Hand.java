@@ -136,6 +136,7 @@ public class Hand {
 		Deck d = new Deck();
 		Hand h = new Hand(d);
 		h.CardsInHand = SeededHand;
+		h.EvalHand();
 
 		return h;
 	}
